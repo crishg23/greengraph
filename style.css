@@ -1,0 +1,113 @@
+body{
+	color:white;
+	font-family:'Montserrat', sans-serif;	
+	background:white;
+	text-align:center;
+}
+
+/*structure Chernandez*/
+#menu, #main, #footer{
+	display:flex;
+}
+#menu{
+	background:#222629;
+	font-size:130%;
+	color:white
+	font-family:'Montserrat', sans-serif;	
+	
+}
+
+#header1{
+	flex:2;	
+	text-align:center;	
+}
+
+#header2{
+	display:flex;
+	flex:10;	
+	align-items:center;
+	
+	
+}
+
+#main{
+	min-height:1000px;
+	background:#9b59b6;
+	font-size:300%;
+}
+
+#footer{
+	display:blocked;
+}
+
+.link{
+	flex:3;
+	text-align:center;	
+}
+
+.foot{
+	flex:3;
+	text-align:center;	
+	display:block; 
+}
+
+.logo{
+	
+	width:230px;
+	height:auto;
+	padding:20px;
+	margin-left:35px;
+	margin-bottom:5px;
+	
+}
+a:visited{
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+}
+a:link{
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+}
+.content{
+	font-size:300%;
+	color:white
+	font-family:'Montserrat', sans-serif;	
+}
+
+/* carousel css Chernandez*/
+
+.carousel-item{
+	
+	height:32rem;
+	background:#ECF8E4;
+	font-size:170%;
+	position:relative;
+	
+}
+
+
+.container{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	padding-bottom:50px;
+	color:#222629;
+	
+}
+.overlay-image{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	background-position:center;
+	background-size:cover;
+	
+}
+
+.btn-primary{
+	background:#ECF8E4;
+	
+}
