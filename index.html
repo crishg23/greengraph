@@ -1,94 +1,245 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="style.css"/>
 	<head>
 		<title>Home</title>
+		<!-- Bootsrap links -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-			<link rel="preconnect" href="https://fonts.googleapis.com">
+		<!-- Google fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap" rel="stylesheet">
-		</head>
+		<!-- icons-->
+		<script src="https://kit.fontawesome.com/aa10d3da9e.js" crossorigin="anonymous"></script>
+	</head>
+	<!-- Body -->	
 	<body>
+		<!-- Menu -->
 		<div id="menu">
-			<div id="header1"><img src="images/Logo-design2.png" class="logo" alt="Logo" ></div>
-				<div id="header2">
-					<div class="link"><a href="index.html">HOME</a></div>
-					<div class="link"><a href="about/about.html">ABOUT US</a></div>
-					<div class="link"><a href="contact/contact.html">SERVICES</a></div>
-					<div class="link"><a href="clients/clients.html">CLIENTS</a></div>
-					<div class="link"><a href="contact/contact.html">CONTACT US</a></div>
-				</div>
-			</div>
-			
-		<div id="carouselExampleDark" class="carousel carousel-dark slide">
-		  <div class="carousel-indicators">
-			<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-			<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-		  </div>
-		  <div class="carousel-inner">
-			<div class="carousel-item active" data-bs-interval="10000">
-			<div class= "overlay-image"> 
-			  <img src="images/slide2.jpg" class="d-block w-100" alt="image 1">
-			 </div>
-			 <div class="carousel-caption d-none d-md-block">
-			 <div class="container">
-				<h1>Marketing solutions</h1>
-				<p>Some representative placeholder content for the first slide.</p>
-				<div class="btn-slide">
-				<a href= "contact/contact.html" class="btn btn-lg btn-primary">
-				Sign up today
+			<div id="header1">
+				<a href="index.html">
+					<img src="images/Logo-design2.png" class="logo" alt="Logo" >
 				</a>
-				</div>
-				</div>
-			  </div>
+				<button class="nav-toggle" onclick="myMenu()">
+					<i class="fas fa-bars"></i>
+				</button>
 			</div>
-			<div class="carousel-item" data-bs-interval="2000">
-			  <img src="..." class="d-block w-100" alt="...">
-			  <div class="carousel-caption d-none d-md-block">
-			  <div class="container">
-				<h1>Social media strategy</h1>
-				<p>Some representative placeholder content for the second slide.</p>
-				</div>
-			  </div>
+			<div id="header2" class="link-menu">
+				<div class="link"><a href="index.html">HOME</a></div>
+				<div class="link"><a href="services/services.html">SERVICES</a></div>
+				<div class="link"><a href="clients/clients.html">OUR WORK</a></div>
+				<div class="link"><a href="contact/contact.html">CONTACT US</a></div>
 			</div>
-			<div class="carousel-item">
-			  <img src="..." class="d-block w-100" alt="...">
-			  <div class="carousel-caption d-none d-md-block">
-			  <div class="container">
-				<h1>Media and advertising</h1>
-				<p>Some representative placeholder content for the third slide.</p>
-			  </div>
-			  </div>
-			</div>
-		  </div>
-		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Previous</span>
-		  </button>
-		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Next</span>
-		  </button>
 		</div>
-	
-			
-		<div  id="content">
-		<p>
-		Develop you marketing and communication strategies with us. 
-		</p>
-		
-		</div>
-		
-		
-		
-		<footer>
-			<div id="footer">
-				<div class="foot">
-				<div class="foot"><h3>&copy; Greengraph</h3></div>
+		<ul class="menu-responsive">
+			<li class="mr"><a href="index.html">HOME</a></li>
+			<li class="mr"><a href="services/services.html">SERVICES</a></li>
+			<li class="mr"><a href="clients/clients.html">OUR WORK</a></li>
+			<li class="mr"><a href="contact/contact.html">CONTACT US</a></li>
+		</ul>
+		<!-- Content -->
+		<main>
+		<!-- Carousel -->
+			<div id="carouselExampleDark" class="carousel carousel-dark slide">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
 				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active" data-bs-interval="10000">
+						<div class= "overlay-image"> 
+							<img src="images/carousel1.jpg" class="d-block w-100" alt="image 1">
+						</div>
+						<div class="carousel-caption">
+							<div class="container">
+								<div class="container-text">
+									<h1 class="container-text">Marketing solutions</h1>
+									<p>Make your business thrive with a great strategy!</p>
+								</div>
+								<div class="btn-slide">
+									<a href= "contact/contact.html" class="btn-primary">
+									Sign up today
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item" data-bs-interval="2000">
+						<div class= "overlay-image"> 
+							<img src="images/carousel1.jpg" class="d-block w-100" alt="social">
+						</div>
+						<div class="carousel-caption ">
+							<div class="container">
+								<div class="container-text">
+									<h1>Social media strategy</h1>
+									<p>Engage and reach the correct audience with the right Social Media Strategy</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class= "overlay-image"> 
+							<img src="images/carousel1.jpg" class="d-block w-100" alt="media">
+						 </div>
+						<div class="carousel-caption ">
+							<div class="container">
+								<div class="container-text">
+									<h1>Media and advertising</h1>
+									<p>Promote your business with creativity and the most updated technologies.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+			<!-- About Us -->
+			<div class="container-home-about-us">
+				<h1>Who are we?</h1>
+				<div class="title-underline"></div>
+					<div class="grid-about-us">
+						<div class="home-about-us-text">
+							<p>Welcome to Greengraph, the marketing agency that's here to <span style="font-weight:bold">help your business bloom!</span></p> 
+							<p>Our mission is to create innovative and customized <span style="font-weight:bold">marketing solutions</span> that make your brand stand out from the crowd. At Greengraph, we don't just offer cookie-cutter solutions – we take the time to <span style="font-weight:bold">understand your business inside and out</span>, so we can deliver strategies that work for you. Our team of experts is passionate about <span style="font-weight:bold">delivering results</span> and providing exceptional service to our clients.</p> 
+							<p>Our vision is simple: to be the go-to agency for businesses that want to grow and <span style="font-weight:bold">thrive in today's competitive market</span>. Whether you need help with branding, digital marketing, or social media, we've got you covered. So if you're ready to take your business to the next level, <span style="font-weight:bold">let's get started!</span></p>
+						</div>
+						<div class="home-about-us-image">
+							<img src="images/team.jpg" alt="Our team">
+						</div>
+					</div>
+			</div>
+			<!-- Our services -->
+			<div class="container-home-our-services">
+				<h1>Our Services</h1>
+				<div class="title-underline"></div>
+						<div class="grid-all-the-services">
+							<div class="all-the-services">
+								<div class="inner-service">
+									<i class="fa-solid fa-globe"></i>
+									<h2>Web Design</h2>
+								</div>
+								<div class="inner-service">
+									<i class="fa-sharp fa-solid fa-chart-simple"></i>
+									<h2>Marketing Strategy</h2>
+								</div>
+								<div class="inner-service">
+									<i class="fa-solid fa-paintbrush"></i>
+									<h2>Graphic Design</h2>
+								</div>
+								<div class="inner-service">
+									<i class="fa-solid fa-magnifying-glass-chart"></i>								
+									<h2>Data Analysis</h2>
+								</div>
+								<div class="inner-service">
+									<i class="fa-solid fa-eye"></i>
+									<h2>Advertising</h2>
+								</div>
+								<div class="inner-service">
+									<i class="fa-brands fa-tiktok"></i>									
+									<h2>Social Media</h2>
+								</div>
+								<div class="inner-service">
+									<i class="fa-solid fa-newspaper"></i>
+									<h2>Public Relations</h2>
+								</div>
+								<div class="inner-service">
+									<i class="fa-solid fa-tag"></i>
+									<h2>SEO</h2>
+								</div>
+							</div>
+						</div>
+				<a class="btn-our-services" href="services/services.html">Check more details</a>
+			</div>
+			<!-- Testimonials -->
+			<div class="container-home-testimonials">
+				<h1>Testimonials</h1>
+					<div class="title-underline"></div>
+				<div class="grid-all-the-testimonials">
+					<div class="all-the-testimonials">
+						<div class="col-testimonial">
+							<div class="inner-testimonial">
+								<img src="images/testimonial1.jpeg" alt="Testimonial 1">
+								<div class="name">Sarah Jones</div>
+								<div class="role">Head of Marketing | Google</div>
+								<div class="stars">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+								<div class="opinion">
+								"I highly recommend GreenGraph! They took the time to understand our needs and developed a strategy that exceeded our expectations. Their team is incredibly talented and dedicated to delivering results. Thanks to their efforts, we've seen a significant increase in our sales."
+								</div>
+							</div>
+						</div>
+						<div class="col-testimonial">
+							<div class="inner-testimonial">
+								<img src="images/testimonial2.jpeg" alt="Testimonial 1">
+								<div class="name">John Smith</div>
+								<div class="role">Marketing Director | Spotify</div>
+								<div class="stars">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="far fa-star"></i>
+								</div>
+								<div class="opinion">
+								"I highly recommend GreenGraph! They took the time to understand our needs and developed a strategy that exceeded our expectations. Their team is incredibly talented and dedicated to delivering results. Thanks to their efforts, we've seen a significant increase in our sales."</div>
+							</div>
+						</div>
+						<div class="col-testimonial">
+							<div class="inner-testimonial">
+								<img src="images/testimonial3.jpeg" alt="Testimonial 1">
+								<div class="name">Michael Davis</div>
+								<div class="role">Commercial Chief | Vans</div>
+								<div class="stars">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+								<div class="opinion">
+								"I highly recommend GreenGraph! They took the time to understand our needs and developed a strategy that exceeded our expectations. Their team is incredibly talented and dedicated to delivering results. Thanks to their efforts, we've seen a significant increase in our sales."</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+				<a class="btn-our-work" href="clients/clients.html">See our work</a>
 			</div>	
-		</footer>			
+		<!-- Javascript doc -->
+		<script src="script.js"></script>
+		</main>
 	</body>	
+	<!-- Footer -->
+	<footer>
+		<div id="footer">
+			<div class="footer-content">
+				<div class="footer1">
+					<p>&copy; Greengraph</p>
+				</div>
+				<div class="footer2">
+					<ul class="socials">
+						<li><a href="https://en-gb.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+						<li><a href= "https://www.linkedin.com/feed/"target="_blank"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href= "https://www.instagram.com/"target="_blank"><i class="fa fa-instagram"></i></a></li>
+					</ul>
+				</div>
+				<div class="footer3">
+					<a href="contact/contact.html">CONTACT US</a>
+				</div>
+			</div>
+		</div>
+	</footer>			
 </html>
